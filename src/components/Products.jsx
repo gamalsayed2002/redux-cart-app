@@ -13,7 +13,7 @@ export default function Products() {
   const products = useSelector((state) => state.products);
   useEffect(() => {
     dispatch(fetchProducts());
-  }, []);
+  }, [dispatch]);
 
 
   return (
